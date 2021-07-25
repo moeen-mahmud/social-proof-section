@@ -92,7 +92,7 @@
   padding: 2rem 4rem 2rem 2rem;
   background-color: var(--primary-very-dark-magenta);
   border-radius: 10px;
-  height: 230px;
+  min-height: 230px;
 }
 
 .card--header {
@@ -130,4 +130,80 @@
 
 .card--three {
   margin-top: 3rem;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+    margin: 5rem 0;
+  }
+
+  .content--section {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 0 1rem;
+  }
+
+  .content {
+    padding: 0;
+    text-align: center;
+  }
+
+  .content--title {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    text-align: center;
+    margin: 0;
+  }
+
+  .ratings--reviews,
+  .ratings--report,
+  .ratings--best {
+    margin: 2rem 0;
+  }
+
+  .ratings--content {
+    margin-top: 1rem;
+  }
+
+  .card--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .card {
+    padding-right: 4.5rem;
+  }
+
+  .card--two,
+  .card--three {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 669px) and (max-width: 1312px) {
+  .container {
+    margin: 5rem 0;
+  }
+
+  .content--section {
+    padding: 0 5rem;
+  }
+
+  .card--section {
+    margin: 5rem 8rem;
+  }
 }
