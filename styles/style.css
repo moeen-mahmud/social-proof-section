@@ -1,0 +1,133 @@
+/* Colors Declaration */
+
+:root {
+  --primary-very-dark-magenta: hsl(300, 43%, 22%);
+  --primary-soft-pink: hsl(333, 80%, 67%);
+  --neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --star-color: hsl(29, 79%, 59%);
+}
+
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+/* Main Container Style */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 7rem 0;
+}
+
+/* Content Section */
+
+.content--section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  padding: 0 10rem;
+}
+
+.content {
+  padding: 0 3rem;
+}
+
+.content--title {
+  font-size: 3rem;
+  color: var(--primary-very-dark-magenta);
+  margin-bottom: 1rem;
+}
+
+.content--paragraph {
+  font-weight: 500;
+  color: var(--neutral-dark-grayish-magenta);
+  line-height: 1.5rem;
+}
+
+/* Ratings Section */
+
+.ratings {
+  display: flex;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.ratings--report {
+  margin-left: 2.5rem;
+}
+
+.ratings--best {
+  margin-left: 5rem;
+}
+
+.ratings--stars {
+  color: var(--star-color);
+}
+
+.ratings--content {
+  color: var(--primary-very-dark-magenta);
+  font-weight: 700;
+}
+
+/* Card Section  */
+
+.card--section {
+  display: flex;
+  gap: 2rem;
+  margin: 5rem 8rem 0 13rem;
+}
+
+.card {
+  padding: 2rem 4rem 2rem 2rem;
+  background-color: var(--primary-very-dark-magenta);
+  border-radius: 10px;
+  height: 230px;
+}
+
+.card--header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card--header img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.card--info .profile--name {
+  color: var(--neutral-white);
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.card--info .profile--status {
+  color: var(--primary-soft-pink);
+  font-weight: 500;
+}
+
+.card--message p {
+  font-size: 12px;
+  margin-top: 2.5rem;
+  color: var(--neutral-white);
+  line-height: 1.5rem;
+}
+
+.card--two {
+  margin-top: 1.5rem;
+}
+
+.card--three {
+  margin-top: 3rem;
+}
